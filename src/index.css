@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-family: 'Outfit', sans-serif;
+  
+  --bg-primary: #0B0E14;
+  --bg-secondary: #151A21;
+  --bg-tertiary: #1E252F;
+  
+  --primary: #6C5DD3;
+  --primary-hover: #5a4cb5;
+  
+  --text-main: #FFFFFF;
+  --text-muted: #808191;
+  --text-accent: #6C5DD3;
+
+  --danger: #FF754C;
+  --success: #3F8CFF;
+  
+  --radius: 12px;
+  --radius-sm: 8px;
+  
+  --transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+input, select {
+  font-family: inherit;
+  background: var(--bg-tertiary);
+  border: 1px solid transparent;
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: var(--transition);
+}
+
+input:focus, select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(108, 93, 211, 0.2);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2C3542; 
+}
