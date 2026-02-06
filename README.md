@@ -1,4 +1,51 @@
 <<<<<<< HEAD
+
+'Centro de Suscripciones de manera local'
+
+Subscription Manager - Walkthrough
+Overview
+A local-first, single-page application for managing subscriptions. Key Features:
+
+Privacy First: No cloud, all data stored in your browser (LocalStorage).
+Dashboard: Visual breakdown of monthly costs, yearly estimates, and category spending.
+Alerts: Upcoming charges (30 days) and potential duplicates.
+Dark Mode: Premium "Dashdark" inspired aesthetic.
+Tech Stack
+Core: React 18 + TypeScript + Vite
+Styling: Vanilla CSS (CSS Variables) + Google Fonts (Outfit)
+Icons: Lucide React
+Testing: Vitest
+Validation Results
+Build: Production build passed (npm run build).
+Tests: Unit tests for cost calculation logic passed (npx vitest run).
+User Guide
+1. Installation
+The project is already set up. To run it:
+
+npm run dev
+2. Adding a Subscription
+Click "New Subscription" in the sidebar.
+Enter Name (e.g., Netflix), Price, Frequency, and Category.
+Select the "Start / Billing Date".
+Click "Add Subscription".
+3. Dashboard
+Monthly Cost: Real-time total of all active monthly subs (yearly subs averaged).
+Chart: Visual bar chart showing spend by category.
+Alerts: Automatically flags upcoming bills and duplicate entries.
+4. Editing/Deleting
+Go to the "Subscriptions" tab (Sidebar).
+Click the Edit (Pencil) icon to modify details.
+Click the Trash icon to remove a subscription.
+
+Comment
+Ctrl+Alt+M
+
+
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
